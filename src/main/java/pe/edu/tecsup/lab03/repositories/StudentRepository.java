@@ -8,4 +8,7 @@ public interface StudentRepository {
     StudentEntity findById(Long id);
     List<StudentEntity> findAll();
     void delete(Long id);
+    // Método agregado en sprint-2 para búsqueda por nombre
+    List<StudentEntity> findByName(String name);
 }
+

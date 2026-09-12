@@ -9,6 +9,7 @@ public class StudentService {
         return student;
     }
 
+
     public StudentEntity getStudent(Long id) {
         return null;
     }
@@ -22,5 +23,10 @@ public class StudentService {
     }
 
     public void deleteStudent(Long id) {
+    }
+
+    // Método agregado en sprint-2 para validar datos del estudiante
+    public boolean isValidStudent(StudentEntity student) {
+        return student != null && student.getName() != null;
     }
 }
