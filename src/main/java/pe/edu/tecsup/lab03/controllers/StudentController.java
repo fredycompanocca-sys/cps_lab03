@@ -30,4 +30,9 @@ public class StudentController {
     public void deleteStudent(Long id) {
         studentService.deleteStudent(id);
     }
+
+    // Método agregado en sprint-2 para pruebas de endpoint
+    public String getControllerStatus() {
+        return "StudentController activo";
+    }
 }

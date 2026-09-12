@@ -6,6 +6,9 @@ public class StudentEntity {
     private String email;
     private String carrera;
 
+    // Atributo agregado en sprint-2
+    private String telefono;
+
     public StudentEntity() {
     }
 
@@ -47,4 +50,15 @@ public class StudentEntity {
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
+
+    // Getter y Setter agregados en sprint-2
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+
 }
